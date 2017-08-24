@@ -1,0 +1,19 @@
+.navigable-page-element {
+  padding: 10px;
+  box-shadow: 1px 1px 5px lightgrey,
+              -1px -1px 5px lightgrey,
+              1px -1px 5px lightgrey,
+              -1px 1px 5px lightgrey;
+  border-radius: 10px;
+}
+
+.header {
+  border-bottom: 2px solid rgba(grey, 0.15);
+  width: 99.8%;
+  margin: 0 auto;
+  .title {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: -0.75px;
+  }
+}

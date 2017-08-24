@@ -1,0 +1,30 @@
+<div class="navigable-page-element" *ngIf="side == 'left'">
+  <div class="columns is-multiline">
+    <div class="column is-full header">
+      <h1 class="title">
+        {{title}}
+      </h1>
+    </div>
+    <div class="column is-half">
+      <p>{{description}}</p>
+    </div>
+    <div class="column is-half">
+      <p>Left Image</p>
+    </div>
+  </div>
+</div>
+<div class="navigable-page-element" *ngIf="side == 'right'">
+  <div class="columns is-multiline">
+    <div class="column is-full header">
+      <h1 class="title">
+        {{title}}
+      </h1>
+    </div>
+    <div class="column is-half">
+      <p>Right Image</p>
+    </div>
+    <div class="column is-half">
+      <p>{{description}}</p>
+    </div>
+  </div>
+</div>

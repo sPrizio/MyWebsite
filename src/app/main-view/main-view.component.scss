@@ -22,14 +22,12 @@
   }
 }
 .decorative-logo {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 10%;
   font-size: 2em;
   width: 70%;
   height: auto;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 .main-view-body > div {
   padding-bottom: 20px;
@@ -38,7 +36,6 @@
   padding: 50px 0 50px 0;
   border-top: 2px solid $accent;
   border-radius: 100px;
-  margin-top: 200px;
   .title {
     font-size: 3.5vw;
     font-weight: 600;
@@ -82,3 +79,18 @@
   }
 }
 
+.navigable-page-container {
+  width: 70%;
+  margin: 0 auto;
+
+  //  spaces the columns (glitch where bulma's default isn't working
+  div {
+    padding: 25px 7.5px 25px 7.5px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .navigable-page-container {
+    width: 100%;
+  }
+}
