@@ -1,0 +1,75 @@
+@import "../../scss/theme.scss";
+
+
+.main-view-body {
+  font-family: Poppins, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: $primary-color;
+}
+.side-nav-toggle {
+  color: $accent;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  .fa {
+    font-size: 2em;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.decorative-logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  border: 2px solid $accent;
+  border-radius: 100%;
+  font-size: 2em;
+  width: 105px;
+  line-height: 105px;
+  text-align: center;
+  &:after, &:before {
+    position: absolute;
+    border: 1px solid $accent;
+    width: 0;
+    height: 90px;
+    display: block;
+    content: '';
+    left: 49%;
+    top: 105px;
+  }
+}
+.welcome-container {
+  padding: 50px 0 50px 0;
+  border-top: 2px solid $accent;
+  border-radius: 100px;
+  .title {
+    font-size: 4.5em;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 2.25em;
+    font-weight: 300;
+    padding-top: 25px;
+  }
+}
+.highlight-blue {
+  color: $accent;
+}
+.learn-me {
+  position: fixed;
+  padding: 14px 40px 14px 40px;
+  background-color: $accent;
+  color: white;
+  border-radius: 150px;
+  border: 1px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $accent;
+    color: $accent;
+    cursor: pointer;
+  }
+}

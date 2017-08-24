@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+// Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+// Font Awesome
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+// Angular Material
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+//  General
+html {
+  text-rendering: optimizelegibility;
+}
