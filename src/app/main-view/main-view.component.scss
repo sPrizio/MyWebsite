@@ -110,35 +110,6 @@
   }
 }
 
-.portfolio {
-  .project {
-    position: relative;
-    width: 100%;
-    .project-image {
-      width: 100%;
-      height: 100%;
-    }
-    .overlay {
-      margin-top: 25px;
-      position: absolute;
-      background-color: #000;
-      top: 0;
-      opacity: 0;
-      display: none;
-      color: white;
-    }
-    a {
-      &:hover {
-        .overlay {
-          opacity: 1;
-          background-color: rgba(0,0,0, 0.75); // this is what gives it the semi-transparent look
-          display: block;
-        }
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 760px) {
   .navigable-page-container {
     width: 100%;

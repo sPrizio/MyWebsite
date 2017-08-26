@@ -37,23 +37,12 @@
       <h1 class="title"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;&nbsp;Projects</h1>
       <div class="columns is-multiline">
         <div class="column is-full">
-          <!-- each component needs an image src, http, description -->
-          <div class="project">
-            <a href="http://www.topnotchtreats.ca" target="_blank">
-              <img class="project-image" src="../../assets/images/tnt.png" alt="Image"/>
-              <div class="overlay">
-                <p>Test</p>
-              </div>
-            </a>
-          </div>
-          <div class="project">
-            <a href="http://www.topnotchtreats.ca" target="_blank">
-              <img class="project-image" src="../../assets/images/tnt.png" alt="Image"/>
-              <div class="overlay">
-                <p>Test</p>
-              </div>
-            </a>
-          </div>
+          <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'" [linkHref]="'http://www.topnotchtreats.ca'"
+          [description]="'Add description'"></app-portfolio-project>
+        </div>
+        <div class="column is-full">
+          <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'" [linkHref]="'http://www.topnotchtreats.ca'"
+                                 [description]="'Add description'"></app-portfolio-project>
         </div>
       </div>
     </div>
