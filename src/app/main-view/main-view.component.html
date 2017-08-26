@@ -4,9 +4,6 @@
       <img src="../../assets/images/main-view-image.png" alt="Web"/>
     </div>
     <div class="hero-body main-view-body">
-      <div class="side-nav-toggle">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
       <div class="container has-text-centered welcome-container" id="welcome-container">
         <h1 class="title" id="page-title">Hello! It is a <span class="underline-blue"><span
           class="clear-white">pleasure</span></span> to meet you.</h1>
@@ -25,15 +22,39 @@
   </section>
 
   <div class="navigable-page-container">
-    <div class="columns is-multiline">
-      <div class="column is-full ">
-        <app-section [side]="'left'" [title]="'about me'" [description]="'Computer Scientist by day, avid video gamer by night. I know, not as cool as being Batman but hey, what can you do? I have a passion for developing websites, applications and professional grade UI/UX experiences. On top of that, I love to play soccer and hockey, watch movies and study astronomy and astrophysics.'"></app-section>
-      </div>
-      <div class="column is-full">
-        <app-section [side]="'right'"></app-section>
-      </div>
-      <div class="column is-full">
-        <app-section [side]="'left'"></app-section>
+    <div class="about-me">
+      <h1 class="title"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;About Me</h1>
+      <p class="about-me-text">
+        I am a web developer, programmer and aspiring UI/UX designer. I'm also currently studying Computer Science in
+        Montreal, Canada.
+        I am especially passionate about technology. Anything relating to software or computer design interests me. I
+        love to play hockey
+        and soccer, am an avid video gamer and a huge lover of astronomy and astrophysics. I am also a self-awarded chip
+        eater.
+      </p>
+    </div>
+    <div class="portfolio">
+      <h1 class="title"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;&nbsp;Projects</h1>
+      <div class="columns is-multiline">
+        <div class="column is-full">
+          <!-- each component needs an image src, http, description -->
+          <div class="project">
+            <a href="http://www.topnotchtreats.ca" target="_blank">
+              <img class="project-image" src="../../assets/images/tnt.png" alt="Image"/>
+              <div class="overlay">
+                <p>Test</p>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="http://www.topnotchtreats.ca" target="_blank">
+              <img class="project-image" src="../../assets/images/tnt.png" alt="Image"/>
+              <div class="overlay">
+                <p>Test</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

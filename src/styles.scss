@@ -8,10 +8,12 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 //  General
 html {
   text-rendering: optimizelegibility;
+  background-color: whitesmoke;
 }
