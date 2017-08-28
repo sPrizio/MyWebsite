@@ -9,6 +9,7 @@ export class PortfolioProjectComponent implements OnInit {
   @Input() imageSrc: string;
   @Input() linkHref: string;
   @Input() description: string;
+  @Input() title: string;
 
   //  calculates overlay's container size based on image
   private static calculateOverlaySize(): void {

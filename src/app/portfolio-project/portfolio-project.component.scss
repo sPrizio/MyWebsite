@@ -1,3 +1,8 @@
+.project-subtitle {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
 .project {
   position: relative;
   width: 100%;
@@ -25,6 +30,16 @@
         background-color: rgba(0,0,0, 0.75); // this is what gives it the semi-transparent look
         display: table;
       }
+    }
+  }
+  .text-container {
+    width: 75%;
+    margin: 0 auto;
+    .overlay-title {
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5em;
+      line-height: 1.7;
     }
   }
 }
