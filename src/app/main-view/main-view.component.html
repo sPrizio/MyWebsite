@@ -1,3 +1,139 @@
-<p>
-  main-view works!
-</p>
+<div class="main-container">
+  <section class="hero is-dark is-fullheight main-view">
+    <div class="hero-body main-view-body">
+      <div class="container has-text-centered welcome-container" id="welcome-container">
+        <h1 class="title" id="page-title">Hello! It is a <span class="underline-blue"><span
+          class="clear-white">pleasure</span></span> to meet you.</h1>
+        <h2 class="subtitle" id="page-subtitle">My name is <span class="highlight-blue">Stephen</span>, and welcome to
+          my
+          website.</h2>
+        <div class="learn-me-container">
+          <div class="learn-me">Learn about me</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="navigable-page-container">
+    <div class="about-me">
+      <h1 class="title"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Me</h1>
+      <p class="about-me-text">
+        I am a web developer, programmer and aspiring UI/UX designer. I'm also currently studying Computer Science in
+        Montreal, Canada.
+        I am especially passionate about technology. Anything relating to software or computer design interests me. I
+        love to play hockey
+        and soccer, am an avid video gamer and a huge lover of astronomy and astrophysics. I am also a self-awarded chip
+        eater.
+      </p>
+    </div>
+    <hr/>
+    <div class="my-skills">
+      <h1 class="title"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;My Skills</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <p>HTML</p>
+          <progress class="progress" value="92" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>CSS</p>
+          <progress class="progress" value="85" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>JavaScript</p>
+          <progress class="progress" value="82" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>jQuery</p>
+          <progress class="progress" value="88" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>TypeScript</p>
+          <progress class="progress" value="78" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>SCSS</p>
+          <progress class="progress" value="92" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>Java</p>
+          <progress class="progress" value="84" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>Spring Boot</p>
+          <progress class="progress" value="78" max="100"></progress>
+        </div>
+        <div class="column is-one-third">
+          <p>Angular</p>
+          <progress class="progress" value="70" max="100"></progress>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="portfolio">
+      <h1 class="title"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Projects</h1>
+      <div class="columns is-multiline">
+        <div class="column is-full">
+          <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'"
+                                 [title]="'Top Notch Treats'"
+                                 [linkHref]="'http://www.topnotchtreats.ca'"
+                                 [description]="'Top Notch Treats aims to provide the highest quality in specialty desserts using a combination of elegance and skill, as such I aimed to '
+          + ' represent this ideology in the design of their website.'"></app-portfolio-project>
+        </div>
+        <div class="column is-full">
+          <hr/>
+        </div>
+        <div class="column is-full">
+          <app-portfolio-project [imageSrc]="'../../assets/images/steveecco.png'"
+                                 [title]="'Steve Ecco'"
+                                 [linkHref]="'http://www.steveecco.com'"
+                                 [description]="'Steve Ecco is an up and coming music producer specializing in House and Electronic Dance Music.'"></app-portfolio-project>
+        </div>
+        <div class="column is-full">
+          <hr/>
+        </div>
+        <div class="column is-full">
+          <app-portfolio-project [imageSrc]="'../../assets/images/stocky.png'"
+                                 [title]="'Stocky'"
+                                 [linkHref]="'../../assets/downloads/Stocky.zip'"
+                                 [description]="'Stocky is a standalone desktop application offering stock investment analysis. Designed and developed in Java and JavaFX'">
+          </app-portfolio-project>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="contact">
+      <p class="about-me-text">
+        Got an idea? Have a project that you think I can help you with? Do you just want to say hi? I promise
+        that I will say hi back. Feel free to contact me!
+      </p>
+      <form class="form" method="post" action="">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control has-icons-left">
+            <input name="name" class="input" placeholder="Your name" value="" required>
+            <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left">
+            <input name="email" class="input" type="email" placeholder="Your email" value="" required>
+            <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control textarea-control">
+            <textarea name="message" class="textarea" placeholder="Your message" required></textarea>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <input class="button is-dark" type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

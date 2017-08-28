@@ -1,0 +1,152 @@
+@import "../../scss/theme.scss";
+
+.main-view {
+  font-family: Poppins, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  /*background: $primary-color;
+  background: -webkit-radial-gradient($primary-gradient, $primary-color);
+  background: -o-radial-gradient($primary-gradient, $primary-color);
+  background: -moz-radial-gradient($primary-gradient, $primary-color);
+  background: radial-gradient($primary-gradient, $primary-color);*/
+  background-image: url('../../assets/images/main-background.jpg');
+  background-size: cover;
+}
+
+.decorative-logo {
+  font-size: 2em;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.main-view-body > div {
+  padding-bottom: 20px;
+}
+
+.welcome-container {
+  padding: 50px 0 50px 0;
+  border-top: 5px solid $accent;
+  border-radius: 100px;
+  .title {
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 2vw;
+    font-weight: 300;
+    padding-top: 25px;
+  }
+}
+
+.underline-blue {
+  color: $accent;
+  text-decoration: underline;
+}
+
+.clear-white {
+  color: white;
+}
+
+.highlight-blue {
+  color: $accent;
+}
+
+.learn-me {
+  width: 250px;
+  margin: 0 auto;
+  padding: 14px 30px 14px 30px;
+  background-color: $accent;
+  color: white;
+  border-radius: 150px;
+  border: 1px solid transparent;
+  transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -webkit-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -moz-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -o-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $accent;
+    color: $accent;
+    cursor: pointer;
+  }
+}
+
+.navigable-page-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 45px;
+  font-size: 62.5%; // this conversion allows for rems, now em's are referring to rem's
+  .fa {
+    line-height: 40px;
+  }
+
+  div {
+    padding: 25px 7.5px 25px 7.5px;
+  }
+}
+
+.about-me {
+  padding-top: 100px;
+}
+.about-me-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.1em;
+  line-height: 1.7;
+}
+
+.my-skills {
+  .column {
+    progress {
+      &::-webkit-progress-value {
+        background-color: $accent;
+      }
+      &::-webkit-progress-bar {
+        background-color: #c3c3c3;
+      }
+    }
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px !important;
+      padding: 0 0 10px 0;
+    }
+  }
+}
+
+.contact {
+  width: 50%;
+  margin: 0 auto;
+}
+.form > .field:first-child {
+  padding-top: 20px;
+}
+.form > .field {
+  padding: 0 5px 0 5px;
+  line-height: 10px;
+}
+.label {
+  font-family: 'Raleway', sans-serif;
+}
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:focus {
+    border-color: $accent;
+  }
+}
+.textarea-control {
+  padding: 0 !important;
+}
+.textarea {
+  width: 100%;
+  &:focus {
+    border-color: $accent;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .navigable-page-container {
+    width: 100%;
+  }
+}
