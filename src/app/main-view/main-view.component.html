@@ -16,7 +16,7 @@
 
   <div class="navigable-page-container">
     <div class="about-me">
-      <h1 class="title"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;About Me</h1>
+      <h1 class="title"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Me</h1>
       <p class="about-me-text">
         I am a web developer, programmer and aspiring UI/UX designer. I'm also currently studying Computer Science in
         Montreal, Canada.
@@ -28,7 +28,7 @@
     </div>
     <hr/>
     <div class="my-skills">
-      <h1 class="title"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;&nbsp;My Skills</h1>
+      <h1 class="title"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;My Skills</h1>
       <div class="columns is-multiline">
         <div class="column is-one-third">
           <p>HTML</p>
@@ -70,7 +70,7 @@
     </div>
     <hr/>
     <div class="portfolio">
-      <h1 class="title"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;&nbsp;Projects</h1>
+      <h1 class="title"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Projects</h1>
       <div class="columns is-multiline">
         <div class="column is-full">
           <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'"
@@ -106,14 +106,30 @@
         Got an idea? Have a project that you think I can help you with? Do you just want to say hi? I promise
         that I will say hi back. Feel free to contact me!
       </p>
-      <form method="post" action="">
+      <form class="form" method="post" action="">
         <div class="field">
           <label class="label">Name</label>
           <div class="control has-icons-left">
-            <input name="name" class="input" type="text" placeholder="Your name" value="" required>
-            <span class="icon is-small is-left">
-                                        <i class="fa fa-user"></i>
-                                    </span>
+            <input name="name" class="input" placeholder="Your name" value="" required>
+            <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left">
+            <input name="email" class="input" type="email" placeholder="Your email" value="" required>
+            <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control textarea-control">
+            <textarea name="message" class="textarea" placeholder="Your message" required></textarea>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <input class="button is-dark" type="submit" value="Submit" />
           </div>
         </div>
       </form>

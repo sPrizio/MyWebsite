@@ -117,6 +117,33 @@
   width: 50%;
   margin: 0 auto;
 }
+.form > .field:first-child {
+  padding-top: 20px;
+}
+.form > .field {
+  padding: 0 5px 0 5px;
+  line-height: 10px;
+}
+.label {
+  font-family: 'Raleway', sans-serif;
+}
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:focus {
+    border-color: $accent;
+  }
+}
+.textarea-control {
+  padding: 0 !important;
+}
+.textarea {
+  width: 100%;
+  &:focus {
+    border-color: $accent;
+  }
+}
 
 @media only screen and (max-width: 760px) {
   .navigable-page-container {
