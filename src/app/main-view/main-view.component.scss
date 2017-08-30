@@ -145,6 +145,20 @@
   }
 }
 
+.footer {
+  padding: 15px 10px 25px 10px;
+  .social {
+    font-size: 2em;
+    color: $accent;
+    &:hover {
+      color: #000;
+    }
+  }
+  .icon {
+    padding: 0 25px 0 25px;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .navigable-page-container {
     width: 100%;
