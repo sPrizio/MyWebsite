@@ -57,7 +57,7 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     img {
-      box-shadow: -10px 10px 10px $primary-gradient;
+      box-shadow: -15px 15px 5px lightgrey;
     }
 
   }
@@ -75,7 +75,7 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     img {
-      box-shadow: 10px 10px 10px $primary-gradient;
+      box-shadow: 15px 15px 5px lightgrey;
     }
   }
 }
