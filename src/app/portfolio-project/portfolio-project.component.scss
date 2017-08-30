@@ -1,6 +1,9 @@
+@import "../../scss/theme";
+
 .project-subtitle {
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
+  color: $accent;
 }
 
 .project {

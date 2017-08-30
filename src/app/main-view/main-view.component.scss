@@ -1,7 +1,6 @@
 @import "../../scss/theme.scss";
 
 .main-view {
-  font-family: Poppins, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   /*background: $primary-color;
   background: -webkit-radial-gradient($primary-gradient, $primary-color);
   background: -o-radial-gradient($primary-gradient, $primary-color);
@@ -9,6 +8,9 @@
   background: radial-gradient($primary-gradient, $primary-color);*/
   background-image: url('../../assets/images/main-background.jpg');
   background-size: cover;
+  .title, .subtitle {
+    font-family: Poppins, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
 }
 
 .decorative-logo {
@@ -73,29 +75,40 @@
 }
 
 .navigable-page-container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 45px;
   font-size: 62.5%; // this conversion allows for rems, now em's are referring to rem's
   .fa {
     line-height: 40px;
   }
+}
 
-  div {
-    padding: 25px 7.5px 25px 7.5px;
-  }
+.navigable-page-element-container {
+  background-color: $secondary-background;
 }
 
 .about-me {
-  padding-top: 100px;
+  width: 60%;
+  padding: 75px 0 75px 0 !important;
+  margin: 0 auto;
+  .title {
+    padding-bottom: 25px;
+  }
 }
+
 .about-me-text {
   font-family: 'Raleway', sans-serif;
   font-size: 2.1em;
   line-height: 1.7;
 }
 
-.my-skills {
+.my-skills, .what-i-can-do {
+  width: 60%;
+  margin: 0 auto;
+  padding: 75px 0 75px 0 !important;
+  .title {
+    padding-bottom: 25px;
+  }
   .column {
     progress {
       &::-webkit-progress-value {
@@ -113,20 +126,59 @@
   }
 }
 
+.what-i-can-do {
+  font-family: 'Raleway', sans-serif;
+  .icon-container {
+    padding: 0 25px 25px 25px;
+    .fa {
+      font-size: 5em;
+      color: $accent;
+    }
+  }
+  .subtitle {
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  .column-text-container {
+    p {
+      font-size: 1.5em !important;
+    }
+  }
+}
+
+.portfolio {
+  width: 60%;
+  margin: 0 auto;
+  padding: 75px 0 75px 0 !important;
+  .title {
+    padding-bottom: 25px;
+  }
+
+}
+
 .contact {
   width: 50%;
   margin: 0 auto;
+  padding: 75px 0 75px 0 !important;
+  div {
+    padding: 25px 7.5px 25px 7.5px;
+  }
+
 }
+
 .form > .field:first-child {
   padding-top: 20px;
 }
+
 .form > .field {
   padding: 0 5px 0 5px;
   line-height: 10px;
 }
+
 .label {
   font-family: 'Raleway', sans-serif;
 }
+
 .input {
   position: absolute;
   top: 0;
@@ -135,9 +187,11 @@
     border-color: $accent;
   }
 }
+
 .textarea-control {
   padding: 0 !important;
 }
+
 .textarea {
   width: 100%;
   &:focus {
@@ -146,7 +200,8 @@
 }
 
 .footer {
-  padding: 15px 10px 25px 10px;
+  padding: 75px 10px 75px 10px;
+  background-color: unset;
   .social {
     font-size: 2em;
     color: $accent;

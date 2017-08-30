@@ -15,5 +15,7 @@
 //  General
 html {
   text-rendering: optimizelegibility;
-  background-color: whitesmoke;
+}
+html, .title, .subtitle {
+  font-family: 'Raleway', sans-serif;
 }
