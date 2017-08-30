@@ -151,13 +151,11 @@
       <div class="contact">
         <div class="columns is-multiline">
           <div class="column is-5 is-offset-1 has-text-centered">
-            <div id="typed-strings">
               <p class="title">{{typewriter_display}}</p>
-            </div>
             <span id="typed"></span>
           </div>
           <div class="column is-3 is-offset-1">
-            <div class="learn-me">Contact Me</div>
+            <div class="learn-me" id="contact-me">Contact Me</div>
           </div>
         </div>
       </div>
@@ -185,5 +183,51 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Glad you could stop by</p>
+      </header>
+      <section class="modal-card-body">
+        <p class="has-text-centered">If you fill these out, I promise to get back to you promptly!</p>
+        <hr />
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control has-icons-left">
+              <input name="name" class="input" placeholder="John Doe" value="" required>
+              <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left">
+              <input name="email" class="input" type="email" placeholder="john.doe@example.com" required>
+              <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control has-icons-left">
+              <input name="subject" class="input" placeholder="Just wanted to say hi!" required>
+              <span class="icon is-small is-left"><i class="fa fa-question-circle"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea name="message" class="textarea" placeholder="Hey Stephen!" required></textarea>
+            </div>
+          </div>
+        </form>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button save-button">Submit</button>
+        <button class="button" id="close" aria-label="close">Cancel</button>
+      </footer>
+    </div>
+  </div>
 
 </div>

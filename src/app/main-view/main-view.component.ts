@@ -14,6 +14,7 @@ export class MainViewComponent implements OnInit {
   ngOnInit() {
     this.controlFontSize();
     this.typingCallback(this);
+    this.toggleModal();
   }
 
   //  defaults to fixed font size for larger screens
@@ -39,8 +40,23 @@ export class MainViewComponent implements OnInit {
     if (current_length < total_length) {
       that.typewriter_display += that.typewriter_text[current_length];
     } else {
-      that.typewriter_display = '';
+      that.typewriter_display = 'W';
     }
     setTimeout(that.typingCallback, 100, that);
+  }
+
+  //  toggle modal
+  toggleModal(): void {
+    const el = document.getElementById('contact-me');
+    const modal = document.getElementById('modal');
+    const close = document.getElementById('close');
+
+    el.addEventListener('click', function () {
+      modal.className += ' is-active';
+
+      close.addEventListener('click', function () {
+        modal.classList.remove('is-active');
+      });
+    });
   }
 }

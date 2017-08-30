@@ -157,7 +157,11 @@
 }
 
 .contact {
+  background-color: rgb(54,54,54);
   padding: 75px 0 75px 0 !important;
+  .title {
+    color: white;
+  }
   .learn-me {
     font-size: 14px;
     text-align: center;
@@ -166,7 +170,7 @@
 
 .footer {
   padding: 75px 10px 75px 10px;
-  background-color: unset;
+  background-color: rgb(238, 238, 238);
   .social {
     font-size: 2em;
     color: $accent;
@@ -181,6 +185,21 @@
 
 .hidden {
   background-color: transparent;
+}
+
+.modal {
+  .save-button {
+    background-color: $accent;
+    color: white;
+  }
+  input, textarea {
+    &:focus {
+      border-color: $accent;
+    }
+  }
+}
+.modal-card-head, .modal-card-foot {
+  background-color: rgb(238, 238, 238);
 }
 
 @media only screen and (max-width: 760px) {
