@@ -157,45 +157,10 @@
 }
 
 .contact {
-  width: 50%;
-  margin: 0 auto;
   padding: 75px 0 75px 0 !important;
-  div {
-    padding: 25px 7.5px 25px 7.5px;
-  }
-
-}
-
-.form > .field:first-child {
-  padding-top: 20px;
-}
-
-.form > .field {
-  padding: 0 5px 0 5px;
-  line-height: 10px;
-}
-
-.label {
-  font-family: 'Raleway', sans-serif;
-}
-
-.input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  &:focus {
-    border-color: $accent;
-  }
-}
-
-.textarea-control {
-  padding: 0 !important;
-}
-
-.textarea {
-  width: 100%;
-  &:focus {
-    border-color: $accent;
+  .learn-me {
+    font-size: 14px;
+    text-align: center;
   }
 }
 

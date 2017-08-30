@@ -6,10 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./main-view.component.scss']
 })
 export class MainViewComponent implements OnInit {
+  private typewriter_text = 'Want to say hi?';
+  typewriter_display = '';
+
   constructor() {}
 
   ngOnInit() {
     this.controlFontSize();
+    this.typingCallback(this);
   }
 
   //  defaults to fixed font size for larger screens
@@ -26,5 +30,17 @@ export class MainViewComponent implements OnInit {
         subtitle.style.fontSize = '2vw';
       }
     });
+  }
+
+  //  method cannot be static
+  typingCallback(that) {
+    const total_length = that.typewriter_text.length;
+    const current_length = that.typewriter_display.length;
+    if (current_length < total_length) {
+      that.typewriter_display += that.typewriter_text[current_length];
+    } else {
+      that.typewriter_display = '';
+    }
+    setTimeout(that.typingCallback, 100, that);
   }
 }

@@ -9,7 +9,7 @@
           website.</h2>
         <div class="learn-me-container">
           <div class="learn-me">Learn about me</div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -149,37 +149,17 @@
 
     <div class="navigable-page-element-container">
       <div class="contact">
-        <p class="about-me-text">
-          Got an idea? Have a project that you think I can help you with? Do you just want to say hi? I promise
-          that I will say hi back. Feel free to contact me!
-        </p>
-        <form class="form" method="post" action="">
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control has-icons-left">
-              <input name="name" class="input" placeholder="Your name" value="" required>
-              <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+        <div class="columns is-multiline">
+          <div class="column is-5 is-offset-1 has-text-centered">
+            <div id="typed-strings">
+              <p class="title">{{typewriter_display}}</p>
             </div>
+            <span id="typed"></span>
           </div>
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left">
-              <input name="email" class="input" type="email" placeholder="Your email" value="" required>
-              <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-            </div>
+          <div class="column is-3 is-offset-1">
+            <div class="learn-me">Contact Me</div>
           </div>
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control textarea-control">
-              <textarea name="message" class="textarea" placeholder="Your message" required></textarea>
-            </div>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <input class="button is-dark" type="submit" value="Submit"/>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
