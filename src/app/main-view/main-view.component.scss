@@ -66,6 +66,7 @@
   -webkit-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
   -moz-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
   -o-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  font-family: Poppins, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   &:hover {
     background-color: transparent;
     border: 1px solid $accent;

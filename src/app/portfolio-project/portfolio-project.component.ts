@@ -42,7 +42,9 @@ export class PortfolioProjectComponent implements OnInit {
     }
   }
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
     PortfolioProjectComponent.attachLoadImageListener();
