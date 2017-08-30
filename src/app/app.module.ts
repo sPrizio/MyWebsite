@@ -16,10 +16,11 @@ import { PortfolioProjectComponent } from './portfolio-project/portfolio-project
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

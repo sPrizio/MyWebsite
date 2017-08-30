@@ -6,10 +6,15 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./main-view.component.scss']
 })
 export class MainViewComponent implements OnInit {
+  private typewriter_text = 'Want to say hi?';
+  typewriter_display = '';
+
   constructor() {}
 
   ngOnInit() {
     this.controlFontSize();
+    this.typingCallback(this);
+    this.toggleModal();
   }
 
   //  defaults to fixed font size for larger screens
@@ -25,6 +30,33 @@ export class MainViewComponent implements OnInit {
         title.style.fontSize = '3.5vw';
         subtitle.style.fontSize = '2vw';
       }
+    });
+  }
+
+  //  method cannot be static
+  typingCallback(that) {
+    const total_length = that.typewriter_text.length;
+    const current_length = that.typewriter_display.length;
+    if (current_length < total_length) {
+      that.typewriter_display += that.typewriter_text[current_length];
+    } else {
+      that.typewriter_display = 'W';
+    }
+    setTimeout(that.typingCallback, 100, that);
+  }
+
+  //  toggle modal
+  toggleModal(): void {
+    const el = document.getElementById('contact-me');
+    const modal = document.getElementById('modal');
+    const close = document.getElementById('close');
+
+    el.addEventListener('click', function () {
+      modal.className += ' is-active';
+
+      close.addEventListener('click', function () {
+        modal.classList.remove('is-active');
+      });
     });
   }
 }

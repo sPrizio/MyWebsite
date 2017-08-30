@@ -6,10 +6,12 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./portfolio-project.component.scss']
 })
 export class PortfolioProjectComponent implements OnInit {
+  @Input() orientation: string;
   @Input() imageSrc: string;
   @Input() linkHref: string;
   @Input() description: string;
   @Input() title: string;
+  @Input() work: string;
 
   //  calculates overlay's container size based on image
   private static calculateOverlaySize(): void {
@@ -40,7 +42,9 @@ export class PortfolioProjectComponent implements OnInit {
     }
   }
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
     PortfolioProjectComponent.attachLoadImageListener();

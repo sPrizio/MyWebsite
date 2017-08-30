@@ -9,134 +9,158 @@
           website.</h2>
         <div class="learn-me-container">
           <div class="learn-me">Learn about me</div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
 
   <div class="navigable-page-container">
     <div class="about-me">
-      <h1 class="title"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Me</h1>
+      <h1 class="title has-text-centered"><!--<i class="fa fa-info-circle"></i>&nbsp;&nbsp;-->Who am I?</h1>
       <p class="about-me-text">
         I am a web developer, programmer and aspiring UI/UX designer. I'm also currently studying Computer Science in
         Montreal, Canada.
-        I am self-taught in web design and development, having used a variety of online documentation, free online courses and book reading to develop my skills. I
+        I am self-taught in web design and development, having used a variety of online documentation, free online
+        courses and book reading to develop my skills. I
         love to play hockey
-        and soccer, am an avid video gamer and a huge lover of astronomy and astrophysics. I am also a self-awarded chip
+        and soccer, am an avid video gamer and a huge lover of astronomy and astrophysics. I am also a self-awarded
+        chip
         eater.
       </p>
     </div>
-    <hr/>
-    <div class="my-skills">
-      <h1 class="title"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;My Skills</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <p>HTML</p>
-          <progress class="progress" value="92" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>CSS</p>
-          <progress class="progress" value="85" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>JavaScript</p>
-          <progress class="progress" value="82" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>jQuery</p>
-          <progress class="progress" value="88" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>TypeScript</p>
-          <progress class="progress" value="78" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>SCSS</p>
-          <progress class="progress" value="92" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>Java</p>
-          <progress class="progress" value="84" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>Spring Boot</p>
-          <progress class="progress" value="78" max="100"></progress>
-        </div>
-        <div class="column is-one-third">
-          <p>Angular</p>
-          <progress class="progress" value="70" max="100"></progress>
+
+    <div class="navigable-page-element-container">
+      <div class="what-i-can-do">
+        <h1 class="title has-text-centered"><!--<i class="fa fa-power-off"></i>&nbsp;&nbsp;-->What do I do?</h1><br />
+        <div class="columns is-multiline">
+          <div class="column is-one-third has-text-centered">
+            <div class="icon-container">
+              <i class="fa fa-code"></i>
+            </div>
+            <div class="column-text-container">
+              <h1 class="subtitle">Code</h1>
+              <p>I code HTML5, CSS3 and Javascript using major browsers Firefox and Chrome simultaneously to ensure optimal performance
+              and responsiveness.</p>
+            </div>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="icon-container">
+              <i class="fa fa-wrench"></i>
+            </div>
+            <div class="column-text-container">
+              <h1 class="subtitle">Design</h1>
+              <p>I design pages, layouts and structure to develop user requirements and allow the user to easily conceptualize the desired outcome.</p>
+            </div>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="icon-container">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="column-text-container">
+              <h1 class="subtitle">Consult</h1>
+              <p>I provide consulting regarding a variety of topics, including attractive colorization,
+              modern trends, accessibility, aesthetics and other areas.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+     <!-- <hr />
+
+      <div class="my-skills">
+        <h1 class="title has-text-centered">&lt;!&ndash;<i class="fa fa-line-chart"></i>&nbsp;&nbsp;&ndash;&gt;My Skills</h1>
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <p>HTML</p>
+            <progress class="progress" value="92" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>CSS</p>
+            <progress class="progress" value="85" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>JavaScript</p>
+            <progress class="progress" value="82" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>jQuery</p>
+            <progress class="progress" value="88" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>TypeScript</p>
+            <progress class="progress" value="78" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>SCSS</p>
+            <progress class="progress" value="92" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>Java</p>
+            <progress class="progress" value="84" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>Spring Boot</p>
+            <progress class="progress" value="78" max="100"></progress>
+          </div>
+          <div class="column is-one-third">
+            <p>Angular</p>
+            <progress class="progress" value="70" max="100"></progress>
+          </div>
+        </div>
+      </div>-->
     </div>
-    <hr/>
+
     <div class="portfolio">
-      <h1 class="title"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Projects</h1>
+      <h1 class="title has-text-centered"><!--<i class="fa fa-desktop"></i>&nbsp;&nbsp;-->What have I worked on?</h1>
       <div class="columns is-multiline">
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'"
+          <app-portfolio-project [orientation]="'left'"
+                                 [imageSrc]="'../../assets/images/tnt.png'"
                                  [title]="'Top Notch Treats'"
                                  [linkHref]="'http://www.topnotchtreats.ca'"
-                                 [description]="'Top Notch Treats aims to provide the highest quality in specialty desserts using a combination of elegance and skill, as such I aimed to '
-          + ' represent this ideology in the design of their website.'"></app-portfolio-project>
+                                 [description]="'Top Notch Treats is a small, custom-style dessert designing establishment specializing in Macarons and custom cakes made for any occassion.'"
+                                 [work]="'Designed and coded website'"></app-portfolio-project>
         </div>
         <div class="column is-full">
-          <hr/>
+          <hr class="hidden" />
         </div>
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/steveecco.png'"
+          <app-portfolio-project [orientation]="'right'"
+                                 [imageSrc]="'../../assets/images/steveecco.png'"
                                  [title]="'Steve Ecco'"
                                  [linkHref]="'http://www.steveecco.com'"
-                                 [description]="'Steve Ecco is an up and coming music producer specializing in House and Electronic Dance Music.'"></app-portfolio-project>
+                                 [description]="'Steve Ecco is an up and coming music producer specializing in House and Electronic Dance Music based in Montreal, Canada.'"
+                                 [work]="'Designed and coded website'"></app-portfolio-project>
         </div>
         <div class="column is-full">
-          <hr/>
+          <hr class="hidden" />
         </div>
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/stocky.png'"
+          <app-portfolio-project [orientation]="'left'"
+                                 [imageSrc]="'../../assets/images/stocky.png'"
                                  [title]="'Stocky'"
                                  [linkHref]="'../../assets/downloads/Stocky.zip'"
-                                 [description]="'Stocky is a standalone desktop application offering stock investment analysis. Designed and developed in Java and JavaFX'">
+                                 [description]="'Stocky is a standalone desktop application offering stock investment analysis based on the Yahoo Finance API.'"
+                                 [work]="'Coded back-end, designed UI/UX'">
           </app-portfolio-project>
         </div>
       </div>
     </div>
-    <hr/>
-    <div class="contact">
-      <p class="about-me-text">
-        Got an idea? Have a project that you think I can help you with? Do you just want to say hi? I promise
-        that I will say hi back. Feel free to contact me!
-      </p>
-      <form class="form" method="post" action="">
-        <div class="field">
-          <label class="label">Name</label>
-          <div class="control has-icons-left">
-            <input name="name" class="input" placeholder="Your name" value="" required>
-            <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+
+    <div class="navigable-page-element-container">
+      <div class="contact">
+        <div class="columns is-multiline">
+          <div class="column is-5 is-offset-1 has-text-centered">
+              <p class="title">{{typewriter_display}}</p>
+            <span id="typed"></span>
+          </div>
+          <div class="column is-3 is-offset-1">
+            <div class="learn-me" id="contact-me">Contact Me</div>
           </div>
         </div>
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left">
-            <input name="email" class="input" type="email" placeholder="Your email" value="" required>
-            <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">Message</label>
-          <div class="control textarea-control">
-            <textarea name="message" class="textarea" placeholder="Your message" required></textarea>
-          </div>
-        </div>
-        <div class="field is-grouped">
-          <div class="control">
-            <input class="button is-dark" type="submit" value="Submit" />
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
-
-  <hr />
 
   <footer class="footer">
     <div class="container">
@@ -159,5 +183,51 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Glad you could stop by</p>
+      </header>
+      <section class="modal-card-body">
+        <p class="has-text-centered">If you fill these out, I promise to get back to you promptly!</p>
+        <hr />
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control has-icons-left">
+              <input name="name" class="input" placeholder="John Doe" value="" required>
+              <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left">
+              <input name="email" class="input" type="email" placeholder="john.doe@example.com" required>
+              <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control has-icons-left">
+              <input name="subject" class="input" placeholder="Just wanted to say hi!" required>
+              <span class="icon is-small is-left"><i class="fa fa-question-circle"></i></span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea name="message" class="textarea" placeholder="Hey Stephen!" required></textarea>
+            </div>
+          </div>
+        </form>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button save-button">Submit</button>
+        <button class="button" id="close" aria-label="close">Cancel</button>
+      </footer>
+    </div>
+  </div>
 
 </div>
