@@ -147,13 +147,12 @@
 }
 
 .portfolio {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   padding: 75px 0 75px 0 !important;
   .title {
-    padding-bottom: 25px;
+    padding-bottom: 75px;
   }
-
 }
 
 .contact {
@@ -212,6 +211,10 @@
   .icon {
     padding: 0 25px 0 25px;
   }
+}
+
+.hidden {
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 760px) {

@@ -31,7 +31,7 @@
 
     <div class="navigable-page-element-container">
       <div class="what-i-can-do">
-        <h1 class="title has-text-centered"><!--<i class="fa fa-power-off"></i>&nbsp;&nbsp;-->What can I do?</h1><br />
+        <h1 class="title has-text-centered"><!--<i class="fa fa-power-off"></i>&nbsp;&nbsp;-->What do I do?</h1><br />
         <div class="columns is-multiline">
           <div class="column is-one-third has-text-centered">
             <div class="icon-container">
@@ -65,10 +65,10 @@
         </div>
       </div>
 
-      <hr />
+     <!-- <hr />
 
       <div class="my-skills">
-        <h1 class="title has-text-centered"><!--<i class="fa fa-line-chart"></i>&nbsp;&nbsp;-->My Skills</h1>
+        <h1 class="title has-text-centered">&lt;!&ndash;<i class="fa fa-line-chart"></i>&nbsp;&nbsp;&ndash;&gt;My Skills</h1>
         <div class="columns is-multiline">
           <div class="column is-one-third">
             <p>HTML</p>
@@ -107,36 +107,41 @@
             <progress class="progress" value="70" max="100"></progress>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
 
     <div class="portfolio">
-      <h1 class="title has-text-centered"><!--<i class="fa fa-desktop"></i>&nbsp;&nbsp;-->Projects</h1>
+      <h1 class="title has-text-centered"><!--<i class="fa fa-desktop"></i>&nbsp;&nbsp;-->What have I done?</h1>
       <div class="columns is-multiline">
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/tnt.png'"
+          <app-portfolio-project [orientation]="'left'"
+                                 [imageSrc]="'../../assets/images/tnt.png'"
                                  [title]="'Top Notch Treats'"
                                  [linkHref]="'http://www.topnotchtreats.ca'"
-                                 [description]="'Top Notch Treats aims to provide the highest quality in specialty desserts using a combination of elegance and skill, as such I aimed to '
-          + ' represent this ideology in the design of their website.'"></app-portfolio-project>
+                                 [description]="'Top Notch Treats is a small, custom style dessert designer specializing in Macarons and specialized cakes designed for all occasions.'"
+                                 [work]="'Designed and coded website'"></app-portfolio-project>
         </div>
         <div class="column is-full">
-          <hr/>
+          <hr class="hidden" />
         </div>
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/steveecco.png'"
+          <app-portfolio-project [orientation]="'right'"
+                                 [imageSrc]="'../../assets/images/steveecco.png'"
                                  [title]="'Steve Ecco'"
                                  [linkHref]="'http://www.steveecco.com'"
-                                 [description]="'Steve Ecco is an up and coming music producer specializing in House and Electronic Dance Music.'"></app-portfolio-project>
+                                 [description]="'Steve Ecco is an up and coming music producer specializing in House and Electronic Dance Music.'"
+                                 [work]="'Designed and coded website'"></app-portfolio-project>
         </div>
         <div class="column is-full">
-          <hr/>
+          <hr class="hidden" />
         </div>
         <div class="column is-full">
-          <app-portfolio-project [imageSrc]="'../../assets/images/stocky.png'"
+          <app-portfolio-project [orientation]="'left'"
+                                 [imageSrc]="'../../assets/images/stocky.png'"
                                  [title]="'Stocky'"
                                  [linkHref]="'../../assets/downloads/Stocky.zip'"
-                                 [description]="'Stocky is a standalone desktop application offering stock investment analysis. Designed and developed in Java and JavaFX'">
+                                 [description]="'Stocky is a standalone desktop application offering stock investment analysis based on Yahoo Finance API.'"
+                                 [work]="'Coded back-end, designed UI/UX'">
           </app-portfolio-project>
         </div>
       </div>

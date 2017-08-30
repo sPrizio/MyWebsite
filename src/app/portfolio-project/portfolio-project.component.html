@@ -1,13 +1,39 @@
-<h1 class="subtitle project-subtitle">{{title}}</h1>
-<div class="project">
-  <a href="{{linkHref}}" target="_blank">
-    <img class="project-image" src="{{imageSrc}}" alt="Image"/>
-    <div class="overlay">
-      <div class="overlay-container">
-        <div class="text-container">
-          <h1 class="subtitle overlay-title">{{description}}</h1>
-        </div>
-      </div>
+<!-- Left component -->
+<div class="columns is-multiline" *ngIf="orientation == 'left'">
+  <div class="column is-5">
+    <p class="subtitle project-subtitle">{{title}}
+      <br/>
+      <small class="small-text">{{work}}</small>
+    </p>
+    <div class="shorten-hr">
+      <hr/>
     </div>
-  </a>
+    <p class="description-text">{{description}}</p><br/><br/>
+    <a href="{{linkHref}}">Visit {{title}}</a>
+  </div>
+  <div class="column is-7 image-container">
+    <div class="wrapper transform-right">
+      <img class="project-image" src="{{imageSrc}}" alt="Image"/>
+    </div>
+  </div>
+</div>
+
+<!-- Right component -->
+<div class="columns is-multiline has-text-right" *ngIf="orientation == 'right'">
+  <div class="column is-7 image-container">
+    <div class="wrapper transform-left">
+      <img class="project-image transform-left" src="{{imageSrc}}" alt="Image"/>
+    </div>
+  </div>
+  <div class="column is-5">
+    <p class="subtitle project-subtitle">{{title}}
+      <br/>
+      <small class="small-text">{{work}}</small>
+    </p>
+    <div class="shorten-hr-right">
+      <hr/>
+    </div>
+    <p class="description-text">{{description}}</p><br/><br/>
+    <a href="{{linkHref}}">Visit {{title}}</a>
+  </div>
 </div>
