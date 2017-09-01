@@ -1,5 +1,5 @@
-<!-- Left component -->
-<div class="columns is-multiline" *ngIf="orientation == 'left'">
+<!-- left component -->
+<div class="columns is-multiline portfolio-component" *ngIf="orientation == 'left'">
   <div class="column is-5 object-text">
     <p class="subtitle project-subtitle">{{title}}
       <br/>
@@ -19,8 +19,8 @@
   </div>
 </div>
 
-<!-- Right component -->
-<div class="columns is-multiline has-text-right" *ngIf="orientation == 'right'">
+<!-- right component -->
+<div class="columns is-multiline has-text-right portfolio-component" *ngIf="orientation == 'right'">
   <div class="column is-7 image-container">
     <div class="wrapper transform-left">
       <img class="project-image transform-left" src="{{imageSrc}}" alt="Image"/>
