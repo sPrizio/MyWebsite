@@ -1,5 +1,5 @@
 <div class="main-container">
-  <section class="hero is-dark is-fullheight main-view">
+  <section class="hero is-dark is-fullheight main-view" id="main-view">
     <div class="hero-body main-view-body">
       <div class="container has-text-centered welcome-container" id="welcome-container">
         <h1 class="title" id="page-title">Hello! It is a <span class="underline-blue"><span
@@ -14,8 +14,8 @@
     </div>
   </section>
 
-  <div class="navigable-page-container">
-    <div class="about-me">
+  <div class="navigable-page-container" id="nav-container">
+    <div class="about-me" id="about-me">
       <h1 class="title has-text-centered"><!--<i class="fa fa-info-circle"></i>&nbsp;&nbsp;-->Who am I?</h1>
       <p class="about-me-text">
         I am a web developer, programmer and aspiring UI/UX designer. I'm also currently studying Computer Science in
@@ -229,6 +229,10 @@
         <button class="button" id="close" aria-label="close">Cancel</button>
       </footer>
     </div>
+  </div>
+
+  <div class="back-to-top" id="back-to-top" (click)="backToTop()">
+    <i class="fa fa-arrow-up"></i>
   </div>
 
 </div>

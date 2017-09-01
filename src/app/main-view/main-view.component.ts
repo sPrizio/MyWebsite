@@ -9,12 +9,29 @@ export class MainViewComponent implements OnInit {
   private typewriter_text = 'Want to say hi?';
   typewriter_display = '';
 
-  constructor() {}
+  //  shows back to top button
+  static showBackToTop(): void {
+    const top  = window.pageYOffset || document.documentElement.scrollTop,
+      left = window.pageXOffset || document.documentElement.scrollLeft;
+    const aboutTop = document.getElementById('main-view').offsetHeight;
+
+    if (top > aboutTop) {
+      document.getElementById('back-to-top').style.display = 'block';
+    } else {
+      document.getElementById('back-to-top').style.display = 'none';
+    }
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
     this.controlFontSize();
     this.typingCallback(this);
     this.toggleModal();
+    window.onscroll = function () {
+      MainViewComponent.showBackToTop();
+    };
   }
 
   //  defaults to fixed font size for larger screens
@@ -58,5 +75,10 @@ export class MainViewComponent implements OnInit {
         modal.classList.remove('is-active');
       });
     });
+  }
+
+  //  back to top
+  backToTop(): void {
+    window.scrollTo(0, 0);
   }
 }
