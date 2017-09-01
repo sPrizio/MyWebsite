@@ -202,6 +202,35 @@
   background-color: rgb(238, 238, 238);
 }
 
+.back-to-top {
+  /*display: none;*/
+  transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -webkit-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -moz-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  -o-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  position: fixed;
+  background-color: $accent;
+  bottom: 35px;
+  right: 50px;
+  z-index: 100;
+  padding: 8px;
+  border-radius: 100%;
+  border: 1px solid transparent;
+  .fa {
+    font-size: 1.75em;
+    color: white;
+    vertical-align: middle;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $accent;
+    .fa {
+      color: $accent;
+    }
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .navigable-page-container {
     width: 100%;

@@ -9,7 +9,8 @@ export class MainViewComponent implements OnInit {
   private typewriter_text = 'Want to say hi?';
   typewriter_display = '';
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {
     this.controlFontSize();
@@ -59,4 +60,17 @@ export class MainViewComponent implements OnInit {
       });
     });
   }
+
+  //  back to top
+  backToTop(): void {
+    window.scrollTo(0, 0);
+  }
+
+  //  shows back to top button
+  showBackToTop(): void {
+    if (document.documentElement.scrollTop > 500) {
+      document.getElementById('back-to-top').style.display = 'block';
+    }
+  }
+
 }
