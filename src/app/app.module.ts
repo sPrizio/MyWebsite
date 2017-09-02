@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainViewComponent } from './main-view/main-view.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PortfolioProjectComponent } from './portfolio-project/portfolio-project.component';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PortfolioProjectComponent } from './portfolio-project/portfolio-project
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    Ng2PageScrollModule
   ],
   entryComponents: [],
   providers: [],

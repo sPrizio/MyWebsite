@@ -203,11 +203,11 @@
 }
 
 .back-to-top {
-  display: none;
-  transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
-  -webkit-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
-  -moz-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
-  -o-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+  opacity: 0;
+  transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear, opacity 0.5s linear;
+  -webkit-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear, opacity 0.5s linear;
+  -moz-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear, opacity 0.5s linear;
+  -o-transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear, opacity 0.5s linear;
   position: fixed;
   background-color: $accent;
   bottom: 35px;

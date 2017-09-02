@@ -16,9 +16,9 @@ export class MainViewComponent implements OnInit {
     const aboutTop = document.getElementById('main-view').offsetHeight;
 
     if (top > aboutTop) {
-      document.getElementById('back-to-top').style.display = 'block';
+      document.getElementById('back-to-top').style.opacity = '1';
     } else {
-      document.getElementById('back-to-top').style.display = 'none';
+      document.getElementById('back-to-top').style.opacity = '0';
     }
   }
 
@@ -79,6 +79,20 @@ export class MainViewComponent implements OnInit {
 
   //  back to top
   backToTop(): void {
-    window.scrollTo(0, 0);
+    const cosParameter = window.scrollY / 2;
+      let scrollCount = 0,
+      oldTimestamp = performance.now();
+    function step (newTimestamp) {
+      scrollCount += Math.PI / (750 / (newTimestamp - oldTimestamp));
+      if (scrollCount >= Math.PI) {
+        window.scrollTo(0, 0);
+      } if (window.scrollY === 0) {
+        return;
+      }
+      window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+      oldTimestamp = newTimestamp;
+      window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
   }
 }
