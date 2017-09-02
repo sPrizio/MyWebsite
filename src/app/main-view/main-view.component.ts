@@ -17,9 +17,9 @@ export class MainViewComponent implements OnInit {
     const aboutTop = document.getElementById('main-view').offsetHeight;
 
     if (top > aboutTop) {
-      document.getElementById('back-to-top').style.opacity = '1';
+      document.getElementById('backToTop').style.opacity = '1';
     } else {
-      document.getElementById('back-to-top').style.opacity = '0';
+      document.getElementById('backToTop').style.opacity = '0';
     }
   }
 
