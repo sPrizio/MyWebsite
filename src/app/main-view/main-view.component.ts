@@ -27,7 +27,7 @@ export class MainViewComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.controlFontSize();
+    /*this.controlFontSize();*/
     this.typingCallback(this);
     this.toggleModal();
     window.onscroll = function () {
@@ -36,7 +36,7 @@ export class MainViewComponent implements OnInit {
   }
 
   //  defaults to fixed font size for larger screens
-  controlFontSize(): void {
+  /*controlFontSize(): void {
     const title = document.getElementById('page-title');
     const subtitle = document.getElementById('page-subtitle');
 
@@ -49,7 +49,7 @@ export class MainViewComponent implements OnInit {
         subtitle.style.fontSize = '2vw';
       }
     });
-  }
+  }*/
 
   //  method cannot be static
   typingCallback(that) {
