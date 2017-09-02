@@ -101,6 +101,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 2.1em;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .my-skills, .what-i-can-do {
@@ -239,5 +240,21 @@
   }
   .navigable-page-container {
     width: 100%;
+  }
+  .about-me, .portfolio{
+    width: 92.5%;
+    margin: 0 auto;
+  }
+  #page-title {
+    font-size: 22px;
+  }
+  #page-subtitle {
+    font-size: 18px;
+  }
+  .contact {
+    min-height: 300px;
+    .columns {
+      min-height: 200px;
+    }
   }
 }
