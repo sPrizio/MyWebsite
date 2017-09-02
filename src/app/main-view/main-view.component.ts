@@ -6,12 +6,13 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./main-view.component.scss']
 })
 export class MainViewComponent implements OnInit {
-  private typewriter_text = 'Want to say hi?';
+  private typewriterWords = ['Just saying hi?', 'Think I can help you?', 'Want to build something?'];
   typewriter_display = '';
+  counter = 0;
 
   //  shows back to top button
   static showBackToTop(): void {
-    const top  = window.pageYOffset || document.documentElement.scrollTop,
+    const top = window.pageYOffset || document.documentElement.scrollTop,
       left = window.pageXOffset || document.documentElement.scrollLeft;
     const aboutTop = document.getElementById('main-view').offsetHeight;
 
@@ -52,14 +53,21 @@ export class MainViewComponent implements OnInit {
 
   //  method cannot be static
   typingCallback(that) {
-    const total_length = that.typewriter_text.length;
+    const total_length = that.typewriterWords[that.counter].length;
     const current_length = that.typewriter_display.length;
+
     if (current_length < total_length) {
-      that.typewriter_display += that.typewriter_text[current_length];
+      that.typewriter_display += that.typewriterWords[that.counter][current_length];
     } else {
-      that.typewriter_display = 'W';
+      that.typewriter_display = '';
+      ++that.counter;
     }
-    setTimeout(that.typingCallback, 100, that);
+
+    setTimeout(that.typingCallback, 150, that);
+
+    if (that.counter === 3) {
+      that.counter = 0;
+    }
   }
 
   //  toggle modal
@@ -80,19 +88,22 @@ export class MainViewComponent implements OnInit {
   //  back to top
   backToTop(): void {
     const cosParameter = window.scrollY / 2;
-      let scrollCount = 0,
+    let scrollCount = 0,
       oldTimestamp = performance.now();
-    function step (newTimestamp) {
+
+    function step(newTimestamp) {
       scrollCount += Math.PI / (750 / (newTimestamp - oldTimestamp));
       if (scrollCount >= Math.PI) {
         window.scrollTo(0, 0);
-      } if (window.scrollY === 0) {
+      }
+      if (window.scrollY === 0) {
         return;
       }
       window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
       oldTimestamp = newTimestamp;
       window.requestAnimationFrame(step);
     }
+
     window.requestAnimationFrame(step);
   }
 }
