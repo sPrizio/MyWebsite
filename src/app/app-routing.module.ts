@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: '**',
     component: MainViewComponent
+  },
+  {
+    path: 'send-email.php',
+    component: MainViewComponent
   }
 ];
 
