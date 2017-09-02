@@ -1,5 +1,5 @@
 <!-- left component -->
-<div class="columns is-multiline portfolio-component" *ngIf="orientation == 'left'">
+<div class="columns is-multiline portfolio-component" *ngIf="orientation == 'left' && pageWidth > 767">
   <div class="column is-5 object-text">
     <p class="subtitle project-subtitle">{{title}}
       <br/>
@@ -20,7 +20,7 @@
 </div>
 
 <!-- right component -->
-<div class="columns is-multiline has-text-right portfolio-component" *ngIf="orientation == 'right'">
+<div class="columns is-multiline has-text-right portfolio-component" *ngIf="orientation == 'right'  && pageWidth > 767">
   <div class="column is-7 image-container">
     <div class="wrapper transform-left">
       <img class="project-image transform-left" src="{{imageSrc}}" alt="Image"/>
@@ -37,5 +37,26 @@
     <p class="description-text">{{description}}</p><br/><br/>
     <a class="visit-link-button" href="{{linkHref}}" target="_blank" *ngIf="linkHref.search('http') !== -1">Visit {{title}}</a>
     <a class="visit-link-button" href="{{linkHref}}" target="_blank" *ngIf="linkHref.search('http') === -1">Download {{title}}</a>
+  </div>
+</div>
+
+<!-- mobile component -->
+<div class="columns is-multiline portfolio-component" *ngIf="pageWidth <= 767">
+  <div class="column is-5 object-text">
+    <p class="subtitle project-subtitle">{{title}}
+      <br/>
+      <small class="small-text">{{work}}</small>
+    </p>
+    <div class="shorten-hr">
+      <hr/>
+    </div>
+    <p class="description-text">{{description}}</p><br/><br/>
+    <a class="visit-link-button" href="{{linkHref}}" target="_blank" *ngIf="linkHref.search('http') !== -1">Visit {{title}}</a>
+    <a class="visit-link-button" href="{{linkHref}}" target="_blank" *ngIf="linkHref.search('http') === -1">Download {{title}}</a>
+  </div>
+  <div class="column is-7 image-container">
+    <div class="wrapper transform-right">
+      <img class="project-image" src="{{imageSrc}}" alt="Image"/>
+    </div>
   </div>
 </div>
